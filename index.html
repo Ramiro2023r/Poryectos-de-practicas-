@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>L9TDeveloper</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link  rel="icon" type="image/x-icon" href="favicon.ico" >
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    rel="stylesheet" type="text/css" />
+
+
+
+    <!-- Incluir lightbox a través de CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!-- Brevo Conversations {literal} -->
+<script>
+  (function(d, w, c) {
+      w.BrevoConversationsID = '65765f1bcdb09110b16d4092';
+      w[c] = w[c] || function() {
+          (w[c].q = w[c].q || []).push(arguments);
+      };
+      var s = d.createElement('script');
+      s.async = true;
+      s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+      if (d.head) d.head.appendChild(s);
+  })(document, window, 'BrevoConversations');
+
+
+
+
+
+
+//Aqui actiaremos la alerta para que se muestre despues cuando terminemos el blog//
+
+  /*document.addEventListener('DOMContentLoaded', function() {
+    // Obtén el contenedor de bienvenida y el overlay
+    var bienvenidaContainer = document.getElementById('bienvenida-container');
+    var overlay = document.getElementById('overlay');
+
+    // Muestra el fondo oscuro y la alerta
+    overlay.style.display = 'block';
+    bienvenidaContainer.style.display = 'block';
+
+    // Opcional: Agrega un temporizador para ocultar la alerta y el fondo oscuro después de un tiempo
+    setTimeout(function() {
+        overlay.style.display = 'none';
+        bienvenidaContainer.style.display = 'none';
+    }, 5000); // 5000 milisegundos (5 segundos)
+});*/</script>
+<!-- /Brevo Conversations {/literal} -->
+
+<style>
+   /* Personaliza el fondo oscuro detrás de la imagen */
+   .lightboxOverlay {
+      background-color: rgba(0, 0, 0, 0.8) !important;
+
+ 
+      
+   }
+
+ 
+
+   #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    z-index: 1; /* Asegura que el fondo esté encima del contenido */
+}
+
+#bienvenida-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Asegura que la alerta esté encima del fondo oscuro */
+    width: 500px ;
+    height: 500px;
+    border-radius: 0px 50px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+  <div id="overlay"></div>
+    <div id="bienvenida-container">
+        <img src="/assets/posts/img/ronal.cv.jpg" alt="Tu Foto" width="400px" height="400px">
+        <p>!Hola! Mi nombre es Ramiro</p>
+        
+        
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+  
+
+
+  <div class="modal fade rounded-circle" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg  " height="650">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-center align-items-center"  >
+          <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">Formato CV.img</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+      </div>
+      <div class="modal-body text-center">
+        <div>
+           <a href="/assets/posts/img/cv.jpg" data-lightbox="image" data-title="Zoomable Image">
+              <img src="/assets/posts/img/cv.jpg" width="450px" height="500" alt="Zoomable Image">
+           </a>
+        </div>
+     </div>
+     
+        </div>
+       <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-dark bg-teal fixed-top "  id="nav4">
+    <div class="container-fluid">
+  
+      <button  id="nav5" class="navbar-toggler" type="text" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Perfil</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Vista Personal
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Curriculum
+                </button>
+                <!-- Modal -->
+
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+
+
+
+
+
+<!-- Agrega la referencia a Font Awesome para los iconos -->
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+
+<!-- Agrega la referencia a Bootstrap JS y Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ 
+  
+  
+  <app-root></app-root>
+  <!-- Bootstrap core JS-->
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
