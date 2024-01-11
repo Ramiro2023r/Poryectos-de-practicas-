@@ -1,0 +1,32 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Direccion</th>
+      <th>Telefono</th>
+      <th>Email</th>
+      <th>Pension</th>
+	    <th>Fecha Nacimiento</th>
+      <th>Distrito</th>
+      <th>Tipo de Seguro</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas">
+      <td>{{persona.nombre}}</td>
+      <td>{{persona.apellido}}</td>
+      <td>{{persona.direccion}}</td>
+      <td>{{persona.telefono}}</td>
+      <td>{{persona.email}}</td>
+      <td>{{persona.pension}}</td>
+      <td>{{persona.fechaNacimiento.slice(0, 10)}}</td>
+      <td >{{persona.distrito.nombre}}</td>
+      <td >{{persona.tipoSeguro.nombre}}</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
